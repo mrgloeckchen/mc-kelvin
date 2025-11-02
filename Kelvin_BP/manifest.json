@@ -1,0 +1,35 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Kelvin Behaviour Pack",
+    "description": "Adds Kelvin NPC behaviour controlled via chat commands.",
+    "uuid": "dc60c290-e34b-4b3c-bb15-aacaa75ec97d",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 60]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "0db70bed-fffd-4c02-b149-b096cd7e953e",
+      "version": [1, 0, 0]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "e9e27675-f54b-44cd-90c6-ac3ec30cde28",
+      "version": [1, 0, 0],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "ddbeefef-1311-42ab-9c20-2803247776ca",
+      "version": [1, 0, 0]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.8.0"
+    }
+  ],
+  "capabilities": ["script_eval"]
+}
