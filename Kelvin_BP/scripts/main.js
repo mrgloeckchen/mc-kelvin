@@ -7,17 +7,26 @@ import { chopTick } from "./behaviour/chop.js";
 import { gatherTick } from "./behaviour/gather.js";
 import { buildHutTick } from "./behaviour/build_hut.js";
 
-world.beforeEvents.chatSend.subscribe((event) => {
-  const message = event.message?.trim();
-  if (!message || !message.toLowerCase().startsWith("/kelvin")) {
-    return;
-  }
-  event.cancel = true;
-  const sender = event.sender;
-  const parts = message.split(/\s+/);
-  const action = parts[1] ?? "";
-  handleKelvinCommand(sender, action.toLowerCase(), parts.slice(2));
-});
+const chatBeforeEvent =
+  world.beforeEvents?.chatSend ?? world.events?.beforeChat;
+
+if (chatBeforeEvent) {
+  chatBeforeEvent.subscribe((event) => {
+    const message = event.message?.trim();
+    if (!message || !message.toLowerCase().startsWith("/kelvin")) {
+      return;
+    }
+    event.cancel = true;
+    const sender = event.sender;
+    const parts = message.split(/\s+/);
+    const action = parts[1] ?? "";
+    handleKelvinCommand(sender, action.toLowerCase(), parts.slice(2));
+  });
+} else {
+  console.warn(
+    "Kelvin Behaviour Pack: Unable to subscribe to chat event; commands disabled."
+  );
+}
 
 system.runInterval(() => {
   if (!ensureKelvinValid()) {
