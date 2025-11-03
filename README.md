@@ -4,10 +4,10 @@ Dieses Projekt liefert zwei serverfertige Minecraft Bedrock Packs, die einen NPC
 
 ## Inhalt
 
-- `Kelvin_BP` – Behavior Pack mit KI-Logik, Chatsteuerung und Script-API-Einsatz
+- `Kelvin_BP` – Behavior Pack mit KI-Logik, Chatsteuerung und Script-API-Einsatz (Script API v1.10.0)
 - `Kelvin_RP` – Resource Pack mit Modelldaten, Rendercontroller, Übersetzung und Textur-Referenzen (die eigentliche Skin-Datei musst du ergänzen)
 
-Beide Packs nutzen die aktuelle Script API (`@minecraft/server`) und setzen aktivierte Experimente (Holiday Creator Features, Beta APIs, GameTest Framework) voraus.
+Beide Packs setzen die aktuelle Script API (`@minecraft/server` v1.10.0) voraus und benötigen aktivierte Experimente (Holiday Creator Features, Beta APIs, GameTest Framework).
 
 ## Installation auf dem Bedrock Dedicated Server (BDS)
 
