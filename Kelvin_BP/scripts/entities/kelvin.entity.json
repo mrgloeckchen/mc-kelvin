@@ -10,7 +10,7 @@
       "geometry": {
         "default": "geometry.kelvin_classic"
       },
-      "render_controllers": [ "controller.render.kelvin" },
+      "render_controllers": ["controller.render.kelvin"],
       "spawn_egg": {
         "base_color": "#7EC8E3",
         "overlay_color": "#1F6CAB"
@@ -18,3 +18,4 @@
     }
   }
 }
+
