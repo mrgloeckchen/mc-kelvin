@@ -1,9 +1,0 @@
-{
-  "resource_pack_name": "Kelvin Resource Pack",
-  "texture_name": "atlas.entity",
-  "texture_data": {
-    "texture.kelvin_placeholder": {
-      "textures": "textures/entity/kelvin_placeholder"
-    }
-  }
-}
