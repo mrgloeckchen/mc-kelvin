@@ -5,7 +5,7 @@
     "description": "Adds Kelvin NPC behaviour controlled via chat commands.",
     "uuid": "dc60c290-e34b-4b3c-bb15-aacaa75ec97d",
     "version": [1, 0, 0],
-    "min_engine_version": [1, 21, 120]
+    "min_engine_version": [1, 20, 60]
   },
   "modules": [
     {

@@ -3,8 +3,12 @@
   "render_controllers": {
     "controller.render.kelvin": {
       "geometry": "Geometry.default",
-      "materials": [{ "*": "entity_alphatest" }],
-      "textures": ["texture.kelvin_placeholder"]
+      "materials": [
+        { "*": "Material.default" }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
     }
   }
 }
